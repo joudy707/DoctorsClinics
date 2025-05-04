@@ -16,6 +16,7 @@ Route::get('/doctors', [DoctorController::class, 'index']);
 Route::get('/doctors/{id}', [DoctorController::class, 'show']);
 Route::post('/doctors/available-times', [DoctorController::class, 'getAvailableTimes']);
 Route::post('/doctor/appointments',[DoctorController::class,'showAppointments']);
+Route::post();
 
 Route::post('/schedules', [DoctorScheduleController::class, 'store']);
 
